@@ -1,0 +1,15 @@
+button {
+    margin: 5px;
+    font-size: 20px;
+    background-color: rgb(157, 206, 233);
+}
+
+#user-input {
+    margin: 5px;
+    font-size: 20px;
+    background-color: lightgrey;
+}
+
+#submit {
+    background-color: lightgrey;
+}
