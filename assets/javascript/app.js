@@ -25,6 +25,7 @@ function displayFoodInfo(userInput) {
         url: queryURL,
         method: "GET"
     }).done(function (response) {
+        console.log(response);
         var data = response.data;
         for (var i = 0; i < data.length; i++) {
             // display a list of gifs
@@ -34,15 +35,8 @@ function displayFoodInfo(userInput) {
 
             var p = $("<p>");
             p.text(data[i].rating);
-            $("#content").append(p);
+            $("#content").append("Rating: " + data[i].rating);
             
-
-// // Storing the rating data
-// var rating = response.Rated;
-// // Creating an element to have the rating displayed
-// var pOne = $("<p>").text("Rating: " + rating);
-// // Displaying the rating
-// foodDiv.append(pOne);
         }
 
 
